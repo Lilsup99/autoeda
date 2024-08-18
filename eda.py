@@ -3,7 +3,18 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from styles import style
+intro = """
+# Analisis Exploratorio de Datos Automatico\n
+### Daniel Vielma Data Scientist\n
 
+Hacer un analisis exploratorio de datos resulta beneficioso. Esto permite observar las características fundamentales de los mismos, comprender la estructura del conjunto de datos, identificar la variable objetivo y explorar posibles técnicas de modelado.\n
+
+![](https://raw.githubusercontent.com/Lilsup99/autoeda/main/datascience-hero.jpg)
+
+Cargue su archivo `.csv` o `.xlsx` y obtenga su reporte inicial de un analisis exploratorio de datos.
+
+"""
+st.write(intro)
 st.markdown(style,unsafe_allow_html=True)
 ##### Funciones de validacion
 def hola():
