@@ -52,6 +52,9 @@ if archivo is not None:
     else: st.write('Subir un archivo de datos en formato tabular')
 
 
+if not data.empty:
+    st.markdown('# Resultados')
+
 with st.expander('datos'):
     if not data.empty:
         st.dataframe(data)
