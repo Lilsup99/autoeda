@@ -34,8 +34,13 @@ def grafica_columna(serie:pd.Series):
             fig.update_layout(paper_bgcolor = "rgba(20, 94, 137, 0.2)",font = {'color': "white", 'family': "Arial"})
             return fig
     elif (serie.dtype == 'float64') or (serie.dtype == 'int64'):
-        fig = px.histogram(serie)
-        return fig
+        if len(serie.drop_duplicates()) >= 15:
+            fig = px.histogram(serie)
+            return fig
+        else:
+            fig = px.bar(serie.value_counts(),x=serie.value_counts().index, y='count')
+            return fig
+
 #########################
 
 archivo = st.file_uploader('Ingrese archivo(csv o xlsx)')
