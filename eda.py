@@ -82,4 +82,8 @@ with st.expander('Informacion detallada'):
                 st.write(data[i].dtype)
                 st.divider()
                 st.markdown(text)
-
+st.write('')
+st.write('')
+st.write('')
+st.write('')
+st.markdown('[Daniel Viema. Data Scientist](https://www.linkedin.com/in/daniel-vielma-10bb42269/)')
