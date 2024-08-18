@@ -11,7 +11,7 @@ Hacer un analisis exploratorio de datos resulta beneficioso. Esto permite observ
 
 ![](https://raw.githubusercontent.com/Lilsup99/autoeda/main/datascience-hero.jpg)
 
-Cargue su archivo `.csv` o `.xlsx` y obtenga su reporte inicial de un analisis exploratorio de datos.
+Cargue su archivo `.csv` o `.xlsx` y obtenga un reporte inicial de un analisis exploratorio de datos.
 
 """
 st.write(intro)
